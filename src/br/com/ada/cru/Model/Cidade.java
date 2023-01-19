@@ -1,4 +1,4 @@
-package Model;
+package br.com.ada.cru.Model;
 
 import java.util.UUID;
 
