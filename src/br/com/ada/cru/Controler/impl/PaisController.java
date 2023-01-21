@@ -9,7 +9,7 @@ public interface PaisController {
     List<Pais> listar();
     void cadastrar (Pais pais);
     Pais ler (UUID id);
-   void update (UUID id, Pais cidade);
+   void update (UUID id, Pais pais);
     Pais delete (UUID id);
 
 }

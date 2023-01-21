@@ -1,6 +1,6 @@
 package br.com.ada.cru.Controler;
 
-import br.com.ada.cru.Model.Cidade;
+import br.com.ada.cru.Model.cidade.Cidade;
 
 import java.util.List;
 import java.util.UUID;

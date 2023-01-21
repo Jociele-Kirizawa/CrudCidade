@@ -1,8 +1,10 @@
-package br.com.ada.cru.Model;
+package br.com.ada.cru.Model.cidade;
 
+import java.io.Serializable;
 import java.util.UUID;
 
-public class Cidade {
+public class Cidade implements Serializable {
+    public static final long serialVersionUID = 1l;
 
     private UUID id;
     private String nome;

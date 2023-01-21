@@ -2,7 +2,7 @@ package br.com.ada.cru.Controler.impl;
 
 import br.com.ada.cru.Controler.CidadeController;
 import br.com.ada.cru.Controler.exceptions.CidadeNaoEncontrada;
-import br.com.ada.cru.Model.Cidade;
+import br.com.ada.cru.Model.cidade.Cidade;
 
 import java.util.*;
 

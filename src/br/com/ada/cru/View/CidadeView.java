@@ -1,18 +1,20 @@
 package br.com.ada.cru.View;
 
 import br.com.ada.cru.Controler.CidadeController;
-import br.com.ada.cru.Controler.impl.CidadeArmazenamentoController;
-import br.com.ada.cru.Model.Cidade;
+import br.com.ada.cru.Model.cidade.Cidade;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Scanner;
 import java.util.UUID;
 
 public class CidadeView {
-    private Scanner scan = new Scanner(System.in);
-    private CidadeController controller = new CidadeArmazenamentoController();
+    private Scanner scan;
+    private CidadeController controller;
+
+    public CidadeView(CidadeController controller, Scanner scan){
+        this.controller=controller;
+        this.scan = scan;
+    }
 
     public void exibirOpcoes(){
         System.out.println("Qual a opção desejada: ");

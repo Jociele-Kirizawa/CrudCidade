@@ -1,8 +1,10 @@
 package br.com.ada.cru.Model;
 
+import java.io.Serializable;
 import java.util.UUID;
 
-public class Pais {
+public class Pais implements Serializable {
+    public static final long serialVersionUID = 1l;
 
    private String nome;
    private UUID id;

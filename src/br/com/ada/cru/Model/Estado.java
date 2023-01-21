@@ -1,8 +1,11 @@
 package br.com.ada.cru.Model;
 
+import java.io.Serializable;
 import java.util.UUID;
 
-public class Estado {
+public class Estado implements Serializable {
+
+    public static final long serialVersionUID = 1l;
     private UUID id;
     private String nome;
     private String sigla;

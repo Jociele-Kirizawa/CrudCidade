@@ -9,8 +9,13 @@ import java.util.Scanner;
 import java.util.UUID;
 
 public class PaisView {
-     private PaisController controllerPais = new PaisArmazenamentoController();
-     private Scanner scan = new Scanner(System.in);
+     private PaisController controllerPais;
+     private Scanner scan;
+
+    public PaisView(PaisController controllerPais, Scanner scan) {
+        this.controllerPais = controllerPais;
+        this.scan = scan;
+    }
 
     public void exibirOpcoesPaises(){
         System.out.println("Qual a opção desejada: ");

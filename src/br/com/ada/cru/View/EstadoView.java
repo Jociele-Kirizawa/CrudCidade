@@ -2,7 +2,6 @@ package br.com.ada.cru.View;
 
 import br.com.ada.cru.Controler.impl.EstadoArmazenamentoController;
 import br.com.ada.cru.Controler.impl.EstadoController;
-import br.com.ada.cru.Model.Cidade;
 import br.com.ada.cru.Model.Estado;
 
 import java.util.List;
@@ -10,8 +9,13 @@ import java.util.Scanner;
 import java.util.UUID;
 
 public class EstadoView {
-    private EstadoController estadoController = new EstadoArmazenamentoController();
-    private Scanner scan = new Scanner(System.in);
+    private EstadoController estadoController; //= new EstadoArmazenamentoController();
+    private Scanner scan; //= new Scanner(System.in);
+
+    public EstadoView(EstadoController estadoController, Scanner scan) {
+        this.estadoController = estadoController;
+        this.scan = scan;
+    }
 
     public void exibirOpcoesEstado(){
         System.out.println("Qual a opção desejada: ");
