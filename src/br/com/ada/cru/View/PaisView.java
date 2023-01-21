@@ -69,18 +69,18 @@ public class PaisView {
         List<Pais> paises = controllerPais.listar();
 
         for (int index=0; index < paises.size(); index++){
-            System.out.println(index+1 + " - " );
+            System.out.print(index+1 + " - " );
             exibirPais(paises.get(index));
         }
 
 
     }
     public void exibirPais(Pais pais){
-        System.out.println("Cidade: " + pais.getNome() + " Sigla: " + pais.getSigla());
+        System.out.println("País: " + pais.getNome() + " Sigla: " + pais.getSigla());
     }
     public void atualizar (){
         listar();
-        System.out.println("Informe o numero do cliente que deseja atualizar");
+        System.out.println("Informe o numero do país que deseja atualizar");
         Integer numeroPais = scan.nextInt();
         scan.nextLine();
         Pais pais = controllerPais.listar().get(numeroPais-1);

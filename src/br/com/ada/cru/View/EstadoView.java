@@ -80,7 +80,7 @@ public class EstadoView {
         List<Estado> estados = estadoController.listar();
 
         for (int index = 0; index < estados.size(); index++) {
-            System.out.println(index + 1 + " - ");
+            System.out.print(index + 1 + " - ");
             exibirEstado(estados.get(index));
         }
     }
